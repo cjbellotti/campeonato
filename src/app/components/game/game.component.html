@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="game row h-100">
+    <div class="detalle col-2">
+      <p>{{game.date | date:longDate}} {{ game.time }}</p>
+      <strong>{{game.phase}}</strong>
+      <p>{{game.place}}</p>
+    </div>
+    <div class="local col-4 h-100 my-auto text-left">
+      <img class="d-inline" src="{{game.player1.image}}">
+      <h2 class="d-inline">{{game.player1.name}}</h2>
+    </div>
+    <div class="resultado col-2 my-auto">
+      <h4>RESULTADO</h4>
+      <div class="goles">
+        <h2>{{game.score1}}-{{game.score2}}</h2>
+      </div>
+    </div>
+    <div class="visitante col-4 h-100 my-auto text-right">
+      <h2 class="d-inline">{{game.player2.name}}</h2>
+      <img class="d-inline" src="{{game.player2.image}}">
+    </div>
+  </div>
+</div>
